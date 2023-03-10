@@ -14,7 +14,7 @@ spec:
     - name: DBPORT
       value: "3306"
     - name: DBHOST
-      value: "mysql-pod"
+      value: "10.244.0.17"
     - name: DBUSER
       value: "root"
     - name: APP_NAME
