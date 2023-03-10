@@ -6,11 +6,11 @@ spec:
   replicas: 3
   selector:
     matchLabels:
-      app: myapp
+      app: employees
   template:
     metadata:
       labels:
-        app: myapp
+        app: employees
     spec:
       containers:
       - name: myapp-container
@@ -23,7 +23,7 @@ spec:
         - name: DBPORT
           value: "3306"
         - name: DBHOST
-          value: "mysql-pod"
+          value: "mysql"
         - name: DBUSER
           value: "root"
         - name: APP_NAME
