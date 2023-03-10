@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
-  name: mysql-replica-set
+  name: mysql
   labels:
     app: mysql
 spec:
@@ -15,7 +15,7 @@ spec:
         app: mysql
     spec:
       containers:
-      - name: mysql-container
+      - name: mysql
         image: 740580894540.dkr.ecr.us-east-1.amazonaws.com/sql_nubila_ecr:v0.1
         ports:
         - containerPort: 3306
