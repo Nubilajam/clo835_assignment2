@@ -4,7 +4,7 @@ metadata:
   name: mysql
 spec:
   containers:
-  - name: mysql-container
+  - name: mysql
     image: 740580894540.dkr.ecr.us-east-1.amazonaws.com/sql_nubila_ecr:v0.1
     ports:
     - containerPort: 3306
