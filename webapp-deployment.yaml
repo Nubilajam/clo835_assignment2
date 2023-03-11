@@ -23,7 +23,7 @@ spec:
         - name: DBPORT
           value: "3306"
         - name: DBHOST
-          value: "mysql"
+          value: "10.244.0.5"
         - name: DBUSER
           value: "root"
         - name: APP_NAME
