@@ -23,6 +23,18 @@ alias k=kubectl
 k create ns vnet
 
 # Creating pod using manifest
-k create -f sql-pod -n vnet
+k create -f sql-pod.yaml -n vnet
+k create -f webapp-pod.yaml -n vnet
 
-k create -f webapp-pod -n vnet
+# Creating ReplicaSet
+k apply -f sql-relica.yaml -n vnet
+k apply -f webapp-replica.yaml -n vnet
+
+# Creating deployment
+
+k create -f sql-deployment.yaml -n vnet
+k create -f webapp-deployment.yaml  -n vnet
+
+#Creating Service
+k create -f sql-service.yaml -n vnet
+k create -f webapp-service.yaml -n vnet
